@@ -1,0 +1,21 @@
+<!--components/message/message.wxml-->
+<block wx:if="{{!isSelf}}">
+    <view class='message'>
+        <view class='nickName'>{{nickName}}</view>
+        <view class="block">
+            <image class='userinfo-avatar' src="{{avatarUrl}}"></image>
+            <view class='triangle'></view>
+            <view class='text'>{{text}}</view>
+        </view>
+    </view>
+</block>
+<block wx:else>
+    <view class='message myMessage'>
+        <view class='nickName myNickName'>{{nickName}}</view>
+        <view class="block myBlock">
+            <image class='userinfo-avatar myImage' src="{{avatarUrl}}"></image>
+            <view class='triangle myTriangle'></view>
+            <view class='text myText'>{{text}}</view>
+        </view>
+    </view>
+</block>

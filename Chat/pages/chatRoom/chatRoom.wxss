@@ -1,0 +1,51 @@
+/* pages/chatRoom/chatRoom.wxss */
+.page{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+.title{
+    font-size: 50rpx;
+    width: 100vw;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background-color: lightskyblue;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.main{
+    width: 100vw;
+    padding: 10rpx 5rpx 130rpx 5rpx;
+}
+.foot{
+    width: 100vw;
+    height: 100rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    z-index:10;
+}
+.input{
+    width: 72%;
+    height: 75rpx;
+    border: 1rpx solid lightskyblue;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0 10rpx;
+    padding: 0 5rpx;
+}
+.send{
+    width: 20%;
+    height: 75rpx;
+    color: white;
+    border-radius: 10rpx;
+    background-color: lightskyblue;
+    line-height: 75rpx;
+}

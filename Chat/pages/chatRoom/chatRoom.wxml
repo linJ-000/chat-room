@@ -1,0 +1,18 @@
+<!--pages/chatRoom/chatRoom.wxml-->
+<view class='page'>
+    <!-- <view class='title'>聊天室</view>
+    <view class='occupation'></view> -->
+    <scroll-view class='main' scroll-y>
+        <message wx:for="{{items}}"
+            nick-name="{{item.nickName}}"
+            avatar-url="{{item.avatarUrl}}"
+            text="{{item.text}}"
+            is-self="{{item.isSelf}}"
+            wx:key="{{items.key}}"
+        ></message>
+    </scroll-view>
+    <view class='foot'>
+        <input class='input' bindinput="getInput" value="{{inputValue}}"></input>
+        <button class='send' bindtap='send'>发送</button>
+    </view>
+</view>

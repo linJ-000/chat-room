@@ -1,0 +1,56 @@
+/* components/message/message.wxss */
+.message{
+    width: 100vw;
+    padding-left: 5rpx;
+}
+.myMessage{
+    padding-left: 0;
+    padding-right: 5rpx;
+}
+.nickName{
+    font-size: 20rpx;
+    padding-left: 30rpx;
+    text-align: left;
+}
+.myNickName{
+    text-align: right;
+    padding-left: 0;
+    padding-right: 30rpx;
+}
+.block{
+    display: flex;
+    justify-content: flex-start;
+}
+.myBlock{
+    flex-direction: row-reverse;
+}
+.userinfo-avatar{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 40rpx;
+    margin: 10rpx;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    background-color: lightskyblue;
+    border: 10rpx solid white;
+    border-right-color: lightskyblue;
+    position: relative;
+    top: 35rpx;
+}
+.myTriangle{
+    border-right-color: white;
+    border-left-color: lightskyblue;   
+}
+.text{
+    max-width: 65%;
+    min-height: 80rpx;
+    line-height: 80rpx;
+    background-color: lightskyblue;
+    color: white;
+    padding-left: 15rpx;
+    padding-right: 15rpx;
+    border-radius: 20rpx;
+    margin-top: 10rpx;
+}
